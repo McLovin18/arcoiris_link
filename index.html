@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo para tu Bebé</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:#d69ab8;
+        }
+
+        .container{
+            max-width:700px;
+            margin:auto;
+            padding:40px 20px;
+            text-align:center;
+        }
+
+        .logo{
+            width:120px;
+            border-radius:50%;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:2rem;
+            color:#2d2d2d;
+            margin-bottom:10px;
+        }
+
+        .description{
+            color:#555;
+            margin-bottom:16px;
+            font-size:1.5rem;
+        }
+
+        /* Redes sociales */
+        .socials{
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            margin-bottom:35px;
+        }
+
+        .socials a{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-decoration:none;
+            color:#444;
+            font-size:22px;
+            box-shadow:0 2px 8px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .socials a:hover{
+            transform:translateY(-4px);
+        }
+
+        /* Botones */
+        .links{
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+        }
+
+        .card{
+            background:white;
+            text-decoration:none;
+            color:#2d2d2d;
+
+            border-radius:18px;
+            padding:20px;
+
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+
+            gap:6px;
+
+            transition:.3s;
+        }
+
+
+        .card-title{
+            font-size:1.2rem;
+            font-weight:700;
+            text-align:center;
+        }
+
+        .card-subtitle{
+            font-size:.9rem;
+            color:#666;
+            text-align:center;
+            font-weight:400;
+        }
+
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+        .card:hover{
+            transform:translateY(-3px);
+        }
+
+        .blue{
+            border:2px solid #7ca9ff;
+        }
+
+        .red{
+            border:2px solid #ff7676;
+        }
+
+        .purple{
+            border:2px solid #d4a4ff;
+        }
+
+        .lightblue{
+            border:2px solid #b0c6ff;
+        }
+
+        .pink{
+            border:2px solid #ffb6c1;
+        }
+
+        /* Separador */
+        .separator{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:15px;
+
+            margin:45px auto 30px;
+        }
+
+        .line{
+            width:130px;
+            height:1px;
+            background:rgba(0,0,0,.25);
+        }
+
+        .arrow{
+            color:#666;
+        }
+
+        /* WhatsApp */
+        .whatsapp-btn{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            width:100%;
+            min-height:80px;
+
+            background:rgba(255,255,255,.45);
+            backdrop-filter:blur(10px);
+
+            border-radius:999px;
+
+            text-decoration:none;
+            color:#2d2d2d;
+
+            font-size:1.4rem;
+            font-weight:700;
+
+            transition:.3s;
+        }
+
+        .whatsapp-btn:hover{
+            transform:translateY(-2px);
+        }
+
+        /* Footer */
+        footer{
+            margin-top:40px;
+            color:#666;
+            font-size:1rem;
+        }
+
+        footer strong{
+            color:#555;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:1.5rem;
+            }
+
+            .card{
+                padding:20px;
+                font-size:1rem;
+            }
+
+            .line{
+                width:80px;
+            }
+
+        }
+
+
+            .whatsapp-btn{
+                font-size:1.1rem;
+                min-height:70px;
+            }
+
+            .floating-whatsapp{
+                position:fixed;
+                bottom:25px;
+                right:25px;
+
+                width:65px;
+                height:65px;
+
+                background:#25D366;
+                color:white;
+
+                border-radius:50%;
+
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                font-size:2rem;
+                text-decoration:none;
+
+                box-shadow:0 8px 25px rgba(37,211,102,.4);
+
+                z-index:9999;
+
+                transition:.3s;
+            }
+
+            .floating-whatsapp:hover{
+                transform:scale(1.1);
+                box-shadow:0 12px 30px rgba(37,211,102,.6);
+            }
+
+            @media (max-width:768px){
+                .floating-whatsapp{
+                    width:60px;
+                    height:60px;
+                    right:20px;
+                    bottom:20px;
+                }
+            }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <img src="public/img_logo.png" class="logo" alt="Logo" style="border-radius: 10px; width:200px">
+
+        <h1>¡Bienvenidos! 💕</h1>
+
+        <p class="description">
+            Todo lo que necesitas para tu bebé, en un solo lugar.
+        </p>
+        
+        <p class="description">
+            Descubre nuestras colecciones y encuentra tus favoritos.
+        </p>
+        <p class="description">
+            📲 Contáctanos para consultas y pedidos.
+        </p>
+
+        <!-- Redes sociales -->
+        <div class="socials">
+
+            <a href="https://www.instagram.com/arcoirismodainfantil.ec/">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/people/Arco%C3%ADris-moda-infantil/100068942525966/?ref=PROFILE_EDIT_xav_ig_profile_page_web#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+<!-- Catálogos -->
+<div class="links">
+
+
+    <a href="https://arcoirismodainfantil.vercel.app/products-by-category?cat=1781619537842" class="card purple">
+        <span class="card-title">CATÁLOGO NIÑAS</span>
+        <span class="card-subtitle">Ropa y accesorios para niñas RN a 3 años</span>
+    </a>
+
+    <a href="https://arcoirismodainfantil.vercel.app/products-by-category?cat=1781619534070" class="card lightblue">
+        <span class="card-title">CATÁLOGO NIÑOS</span>
+        <span class="card-subtitle">Ropa y accesorios para niños RN a 3 años</span>
+    </a>
+
+</div>
+
+        <!-- Separador -->
+        <div class="separator">
+
+            <div class="line"></div>
+
+            <svg class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <polyline points="6 9 12 15 18 9"></polyline>
+
+            </svg>
+
+            <div class="line"></div>
+
+        </div>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5936326003" class="whatsapp-btn">
+            ESCRÍBENOS POR WHATSAPP
+        </a>
+
+        <!-- Footer -->
+        <footer>
+            Creado por <strong>Héctor Cobeña</strong>
+        </footer>
+
+
+    </main>
+
+    <a href="https://wa.me/5936326003"
+        class="floating-whatsapp"
+        target="_blank">
+
+         <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+</body>
+</html>
