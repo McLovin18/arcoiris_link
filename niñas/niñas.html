@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catálogos Niña | Arcoíris Moda Infantil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
+        180deg,
+        #fff7fb 0%,
+        #fff0f6 100%
+    );
+    min-height:100vh;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.header h1{
+    font-size:2.5rem;
+    color:#d94b87;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#777;
+    font-size:1rem;
+}
+
+/* BOTON VOLVER */
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#d94b87;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+}
+
+/* GRID */
+
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+
+/* CARD */
+
+.catalog-card{
+    text-decoration:none;
+    color:#333;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px 20px;
+
+    min-height:220px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    border:2px solid #ffd4e6;
+
+    box-shadow:
+        0 10px 30px rgba(217,75,135,.08);
+
+    transition:.3s;
+}
+
+.catalog-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff87ba;
+
+    box-shadow:
+        0 20px 40px rgba(217,75,135,.18);
+}
+
+/* CIRCULO */
+
+.age{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ff8fc1,
+        #ff69a8
+    );
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1rem;
+    font-weight:800;
+
+    margin-bottom:18px;
+}
+
+.catalog-card h3{
+
+    color:#444;
+
+    font-size:1.2rem;
+
+    margin-bottom:8px;
+}
+
+.catalog-card p{
+
+    color:#777;
+
+    font-size:.9rem;
+
+    line-height:1.5;
+}
+
+/* WHATSAPP */
+
+.whatsapp-container{
+    margin-top:50px;
+    text-align:center;
+}
+
+.whatsapp-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:16px 32px;
+
+    border-radius:999px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+
+footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#888;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .catalog-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .catalog-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+    }
+
+    .header h1{
+        font-size:2rem;
+    }
+
+    .catalog-card{
+        min-height:190px;
+        padding:20px;
+    }
+
+    .age{
+        width:75px;
+        height:75px;
+        font-size:.9rem;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/index.html" class="back-btn">
+    ← Volver al inicio
+</a>
+
+<div class="header">
+    <h1>CATÁLOGOS NIÑA</h1>
+    <p>Encuentra ropa y accesorios para cada etapa de crecimiento.</p>
+</div>
+
+<div class="catalog-grid">
+
+    <a href="https://canva.link/hmpk3qs0iik7vya" class="catalog-card">
+        <div class="age">0-3M</div>
+        <h3>Niñas</h3>
+        <p>Ropa y accesorios para recién nacidas.</p>
+    </a>
+
+    <a href="https://canva.link/d5sdav3h69wkt50" class="catalog-card">
+        <div class="age">3-6M</div>
+        <h3>Niñas</h3>
+        <p>Ropa y accesorios para niñas de 3 a 6 meses.</p>
+    </a>
+
+    <a href="https://canva.link/u8lvgfyqallmwrd" class="catalog-card">
+        <div class="age">6-9M</div>
+        <h3>Niñas</h3>
+        <p>Ropa y accesorios para niñas de 6 a 9 meses.</p>
+    </a>
+
+    <a href="https://canva.link/6p8viyeieavip3a" class="catalog-card">
+        <div class="age">9-12M</div>
+        <h3>Niñas</h3>
+        <p>Ropa y accesorios para niñas de 9 a 12 meses.</p>
+    </a>
+
+    <a href="https://canva.link/6o8c6a1vwqvkzpu" class="catalog-card">
+        <div class="age">18M</div>
+        <h3>Niñas</h3>
+        <p>Colección para niñas de 18 meses.</p>
+    </a>
+
+    <a href="https://canva.link/5gpi0gl9z8vhk4w" class="catalog-card">
+        <div class="age">24M</div>
+        <h3>Niñas</h3>
+        <p>Colección para niñas de 24 meses.</p>
+    </a>
+
+    <a href="https://canva.link/peh8u99v326ihct" class="catalog-card">
+        <div class="age">3A</div>
+        <h3>Niñas</h3>
+        <p>Ropa y accesorios para niñas de 3 años.</p>
+    </a>
+
+</div>
+
+<div class="whatsapp-container">
+    <a href="https://wa.me/593996326003" class="whatsapp-btn">
+        Consultar por WhatsApp
+    </a>
+</div>
+
+<footer>
+    Arcoíris Moda Infantil ✨
+</footer>
+```
+
+</div>
+
+</body>
+</html>
