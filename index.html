@@ -17,7 +17,7 @@
 
         body{
             font-family:'Poppins',sans-serif;
-            background:#d69ab8;
+            background:#F6E3EA; /* rosa pastel muy claro */
         }
 
         .container{
@@ -40,7 +40,7 @@
         }
 
         .description{
-            color:#555;
+            color:#4F4F4F;
             margin-bottom:16px;
             font-size:1.5rem;
         }
@@ -57,15 +57,14 @@
             width:50px;
             height:50px;
             border-radius:50%;
-            background:white;
+            background:#FFFFFF;
             display:flex;
             align-items:center;
             justify-content:center;
             text-decoration:none;
-            color:#444;
+            color:#555;
             font-size:22px;
             box-shadow:0 2px 8px rgba(0,0,0,.08);
-            transition:.3s;
         }
 
         .socials a:hover{
@@ -80,20 +79,15 @@
         }
 
         .card{
-            background:white;
             text-decoration:none;
             color:#2d2d2d;
-
             border-radius:18px;
             padding:20px;
-
             display:flex;
             flex-direction:column;
             align-items:center;
             justify-content:center;
-
             gap:6px;
-
             transition:.3s;
         }
 
@@ -106,7 +100,7 @@
 
         .card-subtitle{
             font-size:.9rem;
-            color:#666;
+            color:#5F5F5F;
             text-align:center;
             font-weight:400;
         }
@@ -129,11 +123,13 @@
         }
 
         .purple{
-            border:2px solid #d4a4ff;
+            background:#F9DDE8;
+            border:1.5px solid #E9A8C7;
         }
 
         .lightblue{
-            border:2px solid #b0c6ff;
+            background:#DCE5F3;
+            border:1.5px solid #AFC1E4;
         }
 
         .pink{
@@ -261,6 +257,18 @@
                     bottom:20px;
                 }
             }
+
+            .creator-link{
+                color:#555;
+                font-weight:600;
+                text-decoration:none;
+                transition:.3s;
+            }
+
+            .creator-link:hover{
+                color:#8f5fbf;
+                text-decoration:underline;
+            }
     </style>
 </head>
 
@@ -341,7 +349,10 @@
 
         <!-- Footer -->
         <footer>
-            Creado por <strong>Héctor Cobeña</strong>
+            Creado por
+            <a href="https://www.instagram.com/hector.cobena/" target="_blank" class="creator-link">
+                Héctor Cobeña
+            </a>
         </footer>
 
 
